@@ -1,14 +1,57 @@
-.App {
-  background-color: #222;
-  height:100vh;
+* {
+  -webkit-box-sizing: border-box;
 }
 
-.App-header {
-  color: white;
-  height: 100vh;
+body {
+  background-color: #3E363F;
+}
 
-  align-items: center;
+.Header {
+  background-color: #F1E4E8;
+  height: 6vh;
+
   display: flex;
+  align-items: center;
   justify-content: center;
+
+  margin: 0px auto;
 }
+
+.HeaderScroll {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+.Board {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 30vh;
+}
+
+.Card {
+  padding: 10px;
+
+  width: 24.25%;
+  height: 100%;
+  margin-left: 0.6%;
+  margin-bottom: 0.6%;
+}
+
+.Card:nth-of-type(3n) {
+  color: #F1E4E8;
+  background: #5AB1BB;
+}
+
+.Card:nth-of-type(3n+1) {
+  color: #F1E4E8;
+  background: #A08B94;
+}
+
+.Card:nth-of-type(3n+2) {
+  color: #F1E4E8;
+  background: #A5C882;
+}
+
 
