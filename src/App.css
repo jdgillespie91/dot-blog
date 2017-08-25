@@ -14,13 +14,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin: 0px auto;
-}
-
-.HeaderScroll {
-  width: 100%;
-  position: fixed;
-  top: 0px;
+  margin: 0 auto;
 }
 
 .Board {
@@ -33,6 +27,8 @@ body {
 .Card {
   padding: 10px;
 
+  /* 4 * width + 5 * margin = 100% */
+  /* margin-bottom should match margin-left */
   width: 24.25%;
   height: 100%;
   margin-left: 0.6%;
