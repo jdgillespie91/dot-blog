@@ -72,6 +72,61 @@ const home = () => {
       link: "/articles/third-article",
       title: "Ports and Adapters",
       summary: "Last Friday in three week’s time I saw a spotted striped blue worm shake hands with a legless lizard."
+    },
+    {
+      link: "/articles/entering-vote",
+      title: "Entering Vote",
+      summary: "The entering vote coats the prepared editorial."
+    },
+    {
+      link: "/articles/castle",
+      title: "Castle",
+      summary: "The castle dresses without the desktop metric."
+    },
+    {
+      link: "/articles/insecure-fog",
+      title: "Insecure Fog",
+      summary: "The insecure fog reiterates a peanut mankind."
+    },
+    {
+      link: "/articles/lens-cries-throughout-vein",
+      title: "The Lens Cries Throughout the Vein",
+      summary: "The lens cries throughout the vein!"
+    },
+    {
+      link: "/articles/detector",
+      title: "The Detector",
+      summary: "Should a detector recover the compound connector?"
+    },
+    {
+      link: "/articles/typesetting-nut",
+      title: "The Typesetting Nut",
+      summary: "Her typesetting nut discontinues the worry."
+    },
+    {
+      link: "/articles/injury-toe-stem",
+      title: "Injury",
+      summary: "Will the injury toe the stem?"
+    },
+    {
+      link: "/articles/ground-pound",
+      title: "Ground Pound!",
+      summary: "A ground pounds down upon the satisfying formula underneath the name."
+    },
+    {
+      link: "/articles/helicopter",
+      title: "Helicopter",
+      summary: "A preface rockets with a helicopter."
+    },
+    {
+      link: "/articles/skin-weds",
+      title: "Skin Weds",
+      summary: "Every sliced skin weds."
+    },
+    {
+      link: "/articles/appendix",
+      title: "Appendix",
+      summary: "Near an appendix breathes the client."
     }
   ];
 
