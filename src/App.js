@@ -6,17 +6,46 @@ import {
 } from 'react-router-dom'
 import './App.css';
 
-const article = ({match}) => (
-  <div className="Article">
-    <ul>
-      <li>Article: {match.params.articleId}</li>
-      <li>First paragraph...</li>
-      <li>Second paragraph...</li>
-    </ul>
-  </div>
-);
+function Article({match}) {
+  return (
+    <div className="Article">
+      <ul>
+        <li>Article: {match.params.articleId}</li>
+        <li>First paragraph...</li>
+        <li>Second paragraph...</li>
+      </ul>
+    </div>
 
-const home = () => {
+  )
+}
+
+function About() {
+  return (
+    <div className="About">
+      <ul>
+        <li>Email: foo</li>
+        <li>Phone: bar</li>
+      </ul>
+    </div>
+  )
+}
+
+function Header() {
+  return (
+    <div className="HeaderContainer">
+      <div className="Header">
+        <HeaderCard link="/" text="Home"/>
+        <HeaderCard link="/about" text="About"/>
+      </div>
+    </div>
+  )
+}
+
+function HeaderCard(props) {
+  return <Link className="HeaderCard" to={props.link}>{props.text}</Link>
+}
+
+function Board() {
   const articles = [
     {
       link: "/articles/first-article",
@@ -131,43 +160,32 @@ const home = () => {
   ];
 
   return (
-    <div className="Board">
-      {articles.map(a => {
-        return (
-          <Link to={a.link} className="Card">
-            <div className="CardTitle">{a.title}</div>
-            <div className="CardSummary">{a.summary}</div>
-          </Link>
-        )
-      })}
+    <div className="BoardContainer">
+      <div className="Board">
+        {articles.map(a => {
+          return <BoardCard link={a.link} title={a.title} summary={a.summary}/>
+        })}
+      </div>
     </div>
   )
-};
+}
 
-const about = () => (
-  <div className="About">
-    <ul>
-      <li>Email: foo</li>
-      <li>Phone: bar</li>
-    </ul>
-  </div>
-);
+function BoardCard(props) {
+  return <Link className="BoardCard" to={props.link}>{props.title}<br/>{props.summary}</Link>
+}
 
-const app = () => (
-  <Router>
-    <div>
-      <div className="Header">
-        <div>
-          <Link to="/">Home</Link><br/>
-          <Link to="/about">About</Link>
-        </div>
+function App() {
+  return (
+    <Router>
+      <div>
+        <Header/>
+
+        <Route exact path="/" component={Board}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/articles/:articleId" component={Article}/>
       </div>
+    </Router>
+  )
+}
 
-      <Route exact path="/" component={home}/>
-      <Route exact path="/about" component={about}/>
-      <Route exact path="/articles/:articleId" component={article}/>
-    </div>
-  </Router>
-);
-
-export default app
+export default App
