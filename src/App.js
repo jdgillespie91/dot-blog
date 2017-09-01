@@ -32,12 +32,10 @@ function About() {
 
 function Header() {
   return (
-    <div className="HeaderContainer">
       <div className="Header">
         <HeaderCard link="/" text="Home"/>
         <HeaderCard link="/about" text="About"/>
       </div>
-    </div>
   )
 }
 
@@ -160,13 +158,11 @@ function Board() {
   ];
 
   return (
-    <div className="BoardContainer">
       <div className="Board">
         {articles.map(a => {
           return <BoardCard link={a.link} title={a.title} summary={a.summary}/>
         })}
       </div>
-    </div>
   )
 }
 
@@ -177,7 +173,7 @@ function BoardCard(props) {
 function App() {
   return (
     <Router>
-      <div>
+      <div className="Container">
         <Header/>
 
         <Route exact path="/" component={Board}/>

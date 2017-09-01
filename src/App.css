@@ -10,12 +10,13 @@ body {
   color: #F1E4E8
 }
 
-.HeaderContainer {
+.Container {
   background-color: rebeccapurple;
 
   display: flex;
+  flex-direction: column;
 
-  justify-content: center;
+  align-items: center;
 }
 
 .Header {
@@ -23,6 +24,8 @@ body {
 
   height: 60px;
   width: 1000px;
+  max-width: 100%;
+  flex-shrink: 1;
 
   display: flex;
   justify-content: space-between;
