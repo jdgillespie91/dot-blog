@@ -22,7 +22,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  align-content: center;
+  align-content: flex-start;
 
   height: 94vh;
 }
