@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "All things infrastructure for my blog"
+
+Resources:
+
+  StagingBucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: "says-quietly.jakegillespie.me"
+      Tags:
+      - Key: project
+        Value: dot-blog
