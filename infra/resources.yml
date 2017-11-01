@@ -7,9 +7,6 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: says-quietly.jakegillespie.me
-      Tags:
-      - Key: project
-        Value: dot-blog
 
   StagingSite:
     Type: AWS::CloudFront::Distribution
@@ -31,3 +28,13 @@ Resources:
           S3OriginConfig:
             OriginAccessIdentity: ""
         PriceClass: PriceClass_100
+
+  StagingRoute:
+    Type: "AWS::Route53::RecordSet"
+    Properties:
+      AliasTarget:
+        DNSName: !GetAtt StagingSite.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+      HostedZoneId: Z24837ZZ5BAXFE  # Requires hosted zone as created by dot-infrastructure.
+      Name: says-quietly.jakegillespie.me.
+      Type: A
