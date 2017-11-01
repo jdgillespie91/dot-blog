@@ -7,6 +7,8 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: says-quietly.jakegillespie.me
+      WebsiteConfiguration:
+        IndexDocument: index.html
 
   StagingSite:
     Type: AWS::CloudFront::Distribution
