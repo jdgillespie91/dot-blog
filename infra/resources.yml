@@ -10,6 +10,18 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: index.html
 
+  StagingBucketPolicy:
+    Type: "AWS::S3::BucketPolicy"
+    Properties:
+      Bucket: !Ref StagingBucket
+      PolicyDocument:
+        Statement:
+        - Action:
+          - "s3:GetObject"
+          Effect: "Allow"
+          Resource: !Join [ "", [ "arn:aws:s3:::", !Ref StagingBucket, "/*" ] ]
+          Principal: "*"
+
   StagingSite:
     Type: AWS::CloudFront::Distribution
     Properties:
