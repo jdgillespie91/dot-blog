@@ -1,14 +1,31 @@
 .App {
   background-color: #222;
-  height:100vh;
+  height:100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-header {
+.Header {
+  background-color: #333;
+  height: 10vh;
+  width: 50vw;
+}
+
+.Body {
+  background-color: #444;
   color: white;
-  height: 100vh;
+  height: 80vh;
+  width: 50vw;
 
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
+.Footer {
+  background-color: #555;
+  height: 10vh;
+  width: 50vw;
+}
