@@ -21,6 +21,9 @@ Development
 
 *Requires awscli*
 
+Infrastructure
+~~~~~~~~~~~~~~
+
 Create the infrastructure using the templates in the infra_ folder. For example, create the resources from scratch with
 
 .. code-block:: bash
@@ -35,6 +38,12 @@ Update an existing set of resources with
     $ aws cloudformation execute-change-set --stack-name dot-blog-resources --change-set-name dot-blog-resources-cs-1
 
 .. _infra: infra
+
+Site
+~~~~
+
+.. image:: images/dot-workflow.png
+
 
 Certificates
 ------------
