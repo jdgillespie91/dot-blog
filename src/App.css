@@ -1,6 +1,13 @@
+:root {
+  --header-height: 80px;
+  --footer-height: 80px;
+  --dark-color: #222;
+  --light-color: #333;
+  --card-border: 6px;
+}
+
 .app {
-  background-color: #222;
-  height: 100%;
+  background-color: var(--dark-color);
 
   display: flex;
   flex-direction: column;
@@ -8,15 +15,16 @@
 }
 
 .header {
-  background-color: #333;
-  height: 100px;
-  width: 100%;
+  background-color: var(--light-color);
 
-  z-index: 3;
+  height: var(--header-height);
+  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  z-index: 3;
 }
 
 .logo {
@@ -25,42 +33,36 @@
   width: 100px;
 }
 
-@media screen and (max-width: 1000px) {
+.body {
+  background-color: var(--dark-color);
+
+  min-height: 100vh;
+  margin-top: calc(-1 * var(--header-height));
+  margin-bottom: calc(-1 * var(--footer-height));
+
+  z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
   .body {
-    background-color: #444;
     width: 100%;
-    min-height: 100vh;
-
-    z-index: 1;
-
-    margin-top: -100px;
-    margin-bottom: -100px;
-
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 500px) {
   .body {
-    background-color: #444;
-    width: 1000px;
-    min-height: 100vh;
-
-    z-index: 1;
-
-    margin-top: -100px;
-    margin-bottom: -100px;
-
+    width: 500px;
   }
 }
 
-.cardContainer {
-  background-color: #333555;
+.card-container {
+  background-color: var(--dark-color);
 
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: var(--card-border);
+  padding-bottom: var(--card-border);
 
   display: flex;
   flex-direction: column;
@@ -69,15 +71,17 @@
 
 .card {
   background-color: #333444;
+
+  margin: var(--card-border);
+
   height: 150px;
   width: 100%;
-
-  margin: 10px;
 }
 
 .footer {
-  background-color: #555;
-  height: 100px;
+  background-color: var(--light-color);
+
+  height: var(--footer-height);
   width: 100%;
 
   z-index: 2;

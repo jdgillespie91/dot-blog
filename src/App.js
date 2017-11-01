@@ -9,11 +9,7 @@ class App extends Component {
           <div className="logo"/>
         </div>
         <div className="body">
-          <div className="cardContainer">
-            <div className="card"/>
-            <div className="card"/>
-            <div className="card"/>
-            <div className="card"/>
+          <div className="card-container">
             <div className="card"/>
             <div className="card"/>
             <div className="card"/>
