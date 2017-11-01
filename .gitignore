@@ -12,6 +12,9 @@
 # IDE
 .idea/
 
+# Articles (for now)
+articles/
+
 # misc
 .DS_Store
 .env.local
