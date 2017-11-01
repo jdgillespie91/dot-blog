@@ -7,7 +7,7 @@ import {
 import './App.css';
 
 const article = ({match}) => (
-  <div>
+  <div className="Article">
     <ul>
       <li>Article: {match.params.articleId}</li>
       <li>First paragraph...</li>
@@ -18,26 +18,36 @@ const article = ({match}) => (
 
 const home = () => (
   <div className="Board">
-    <div className="Card">
-      <ul><li><Link to="/articles/first-article">First article</Link></li></ul>
-    </div>
-    <div className="Card">
-      <ul><li><Link to="/articles/second-article">Second article</Link></li></ul>
-    </div>
-    <div className="Card">
-      <ul><li><Link to="/articles/third-article">Third article</Link></li></ul>
-    </div>
-    <div className="Card">
-      <ul><li><Link to="/articles/fourth-article">Fourth article</Link></li></ul>
-    </div>
-    <div className="Card">
-      <ul><li><Link to="/articles/fifth-article">Fifth article</Link></li></ul>
-    </div>
+    <Link to="/articles/first-article" className="Card">
+      <ul>
+        <li>First article</li>
+      </ul>
+    </Link>
+    <Link to="/articles/second-article" className="Card">
+      <ul>
+        <li>Second article</li>
+      </ul>
+    </Link>
+    <Link to="/articles/third-article" className="Card">
+      <ul>
+        <li>Third article</li>
+      </ul>
+    </Link>
+    <Link to="/articles/fourth-article" className="Card">
+      <ul>
+        <li>Fourth article</li>
+      </ul>
+    </Link>
+    <Link to="/articles/fifth-article" className="Card">
+      <ul>
+        <li>Fifth article</li>
+      </ul>
+    </Link>
   </div>
 );
 
 const about = () => (
-  <div>
+  <div className="About">
     <ul>
       <li>Email: foo</li>
       <li>Phone: bar</li>
