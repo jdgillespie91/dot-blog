@@ -19,7 +19,7 @@ Run the app in development mode with
 Development
 -----------
 
-*Requires* |awscli|_
+*Requires awscli*
 
 Create the infrastructure using the templates in the infra_ folder. For example, create the resources from scratch with
 
@@ -34,8 +34,6 @@ Update an existing set of resources with
     $ aws cloudformation create-change-set --stack-name dot-blog-resources --template-body file://infra/resources.yml --change-set-name dot-blog-resources-cs-1
     $ aws cloudformation execute-change-set --stack-name dot-blog-resources --change-set-name dot-blog-resources-cs-1
 
-.. awscli: https://aws.amazon.com/cli/
-.. |awscli| replace:: *awscli*
 .. _infra: infra
 
 Certificates
