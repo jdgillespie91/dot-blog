@@ -32,7 +32,7 @@ Resources:
           ForwardedValues:
             QueryString: false
           TargetOriginId: S3-says-quietly.jakegillespie.me
-          ViewerProtocolPolicy: allow-all
+          ViewerProtocolPolicy: redirect-to-https
         DefaultRootObject: index.html
         Enabled: true
         HttpVersion: "http2"
@@ -42,6 +42,9 @@ Resources:
           S3OriginConfig:
             OriginAccessIdentity: ""
         PriceClass: PriceClass_100
+        ViewerCertificate:
+          IamCertificateId: ASCAINWHIIADMVA464UJC
+          SslSupportMethod: sni-only
 
   StagingRoute:
     Type: "AWS::Route53::RecordSet"
