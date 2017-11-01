@@ -9,18 +9,18 @@ class App extends Component {
           <div className="logo"/>
         </div>
         <div className="body">
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
-          <div className="card"/>
+          <div className="cardContainer">
+            <div className="card"/>
+            <div className="card"/>
+            <div className="card"/>
+            <div className="card"/>
+            <div className="card"/>
+            <div className="card"/>
+            <div className="card"/>
+            <div className="card"/>
+            <div className="card"/>
+            <div className="card"/>
+          </div>
         </div>
         <div className="footer"/>
       </div>
