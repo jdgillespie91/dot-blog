@@ -15,7 +15,7 @@ function Header() {
 }
 
 function HomeHeader(props) {
-  return <Link className="logo" to={props.link}/>
+  return <Link className="logo" to={props.link}>Home</Link>
 }
 
 function Cards() {
@@ -181,7 +181,7 @@ function Footer() {
 }
 
 function AboutFooter(props) {
-  return <Link className="about-link" to={props.link}/>
+  return <Link className="about-link" to={props.link}>About</Link>
 }
 
 function App() {
