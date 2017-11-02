@@ -1,13 +1,13 @@
 :root {
-  --header-height: 80px;
-  --footer-height: 80px;
-  --dark-color: #222;
-  --light-color: #333;
-  --card-border: 6px;
+  --header-height: 60px;
+  --footer-height: 60px;
+  --bg-color: #454955;
+  --fg-color: #F3EFF5;
+  --card-border: 8px;
 }
 
 .app {
-  background-color: var(--dark-color);
+  background-color: var(--bg-color);
 
   display: flex;
   flex-direction: column;
@@ -15,7 +15,9 @@
 }
 
 .header {
-  background-color: var(--light-color);
+  background-color: var(--fg-color);
+
+  box-shadow: 0px 3px 6px 0px #252323;
 
   height: var(--header-height);
   width: 100%;
@@ -28,18 +30,19 @@
 }
 
 .logo {
-  background-color: #444333;
-  height: 50px;
-  width: 100px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  color: #252323;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: grey;
 }
 
 .body {
-  background-color: var(--dark-color);
+  background-color: var(--bg-color);
 
   min-height: 100vh;
   margin-top: calc(-1 * var(--header-height));
@@ -61,7 +64,7 @@
 }
 
 .body-container {
-  background-color: var(--dark-color);
+  background-color: var(--bg-color);
 
   margin-top: var(--header-height);
   margin-bottom: var(--footer-height);
@@ -75,7 +78,9 @@
 }
 
 .card {
-  background-color: #333444;
+  background-color: #934683;
+
+  box-shadow: 2px 2px 6px 1px #252323;
 
   color: grey;
   display: flex;
@@ -90,7 +95,9 @@
 }
 
 .footer {
-  background-color: var(--light-color);
+  background-color: var(--fg-color);
+
+  box-shadow: 0px -3px 6px 0px #252323;
 
   height: var(--footer-height);
   width: 100%;
@@ -104,20 +111,21 @@
 }
 
 .about-link {
-  background-color: #444666;
-  height: 50px;
-  width: 100px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #252323;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: grey
 }
 
 .about {
-  color: grey
+  color: #grey;
 }
 
 .article {
-  color: grey
+  color: grey;
 }
