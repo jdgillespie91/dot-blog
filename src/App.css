@@ -1,9 +1,8 @@
 :root {
-  --header-height: 60px;
+  --header-height: 55px;
   --footer-height: 40px;
   --bg-color: #454955;
   --fg-color: #F3EFF5;
-  --card-border: 1px;
 }
 
 .app {
@@ -17,7 +16,7 @@
 .header {
   background-color: var(--fg-color);
 
-  box-shadow: 0px 4px 4px 0px #252323;
+  box-shadow: 0px 0px 6px 0px #252323;
 
   height: var(--header-height);
   width: 100%;
@@ -51,15 +50,15 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
   .body {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 420px) {
   .body {
-    width: 500px;
+    width: 420px;
   }
 }
 
@@ -69,35 +68,45 @@
   margin-top: var(--header-height);
   margin-bottom: var(--footer-height);
 
-  padding-top: var(--card-border);
-  padding-bottom: var(--card-border);
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .card {
-  background-color: #934683;
-
-  box-shadow: 2px 2px 6px 1px #252323;
-
-  color: grey;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  margin: var(--card-border);
-
-  height: 150px;
+  height: 260px;
   width: 100%;
+}
+
+.card:nth-child(4n) {
+  background-color: #FFA69E;
+  color: #FFA69E;
+}
+
+.card:nth-child(4n+1) {
+  background-color: #FAF3DD;
+  color: #FAF3DD;
+}
+
+.card:nth-child(4n+2) {
+  background-color: #B8F2E6;
+  color: #B8F2E6;
+}
+
+.card:nth-child(4n+3) {
+  background-color: #D1B3C4;
+  color: #D1B3C4;
 }
 
 .footer {
   background-color: var(--fg-color);
 
-  box-shadow: 0px -1px 1px 0px #252323;
+  box-shadow: 0px 0px 6px 0px #252323;
 
   height: var(--footer-height);
   width: 100%;
