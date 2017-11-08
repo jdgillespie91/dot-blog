@@ -162,4 +162,25 @@
 
 .article {
   color: grey;
+
+  width: 100%;
+}
+
+.article-title {
+  margin: 40px;
+
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #252323;
+}
+
+.article-content {
+  margin: 40px;
+
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-size: 16px;
+  font-style: italic;
+  color: #252323;
 }

@@ -3,7 +3,28 @@ const articles = [
     link: "/articles/first-article",
     title: "First article",
     summary: "Hello, world!",
-    backgroundColor: "#FFA69E"
+    backgroundColor: "#FFA69E",
+    content: "I want to write about a technique I picked up on a recent project that can be used to improve the robustness of a test suite... After all, what's more exciting than a reliable tests?\n" +
+    "\n" +
+    "First, let's talk about what your test suite might look at the moment. Suppose that you have an application with some external dependency. Maybe you're pulling data from someone's API. Maybe you're a consumer of some event source. Whatever it is, it's external and can change at any time and you need to be on top of it.\n" +
+    "\n" +
+    "You'll typically have two types of test that exercise this dependency. For now, let's call these _functional_ tests and _integration_ tests. Since these words are somewhat arbitrary, we'll define them too.\n" +
+    "\n" +
+      "First, let's talk about what your test suite might look at the moment. Suppose that you have an application with some external dependency. Maybe you're pulling data from someone's API. Maybe you're a consumer of some event source. Whatever it is, it's external and can change at any time and you need to be on top of it.\n" +
+    "\n" +
+    "You'll typically have two types of test that exercise this dependency. For now, let's call these _functional_ tests and _integration_ tests. Since these words are somewhat arbitrary, we'll define them too.\n" +
+    "\n" +
+    "First, let's talk about what your test suite might look at the moment. Suppose that you have an application with some external dependency. Maybe you're pulling data from someone's API. Maybe you're a consumer of some event source. Whatever it is, it's external and can change at any time and you need to be on top of it.\n" +
+    "\n" +
+    "You'll typically have two types of test that exercise this dependency. For now, let's call these _functional_ tests and _integration_ tests. Since these words are somewhat arbitrary, we'll define them too.\n" +
+    "\n" +
+    "First, let's talk about what your test suite might look at the moment. Suppose that you have an application with some external dependency. Maybe you're pulling data from someone's API. Maybe you're a consumer of some event source. Whatever it is, it's external and can change at any time and you need to be on top of it.\n" +
+    "\n" +
+    "You'll typically have two types of test that exercise this dependency. For now, let's call these _functional_ tests and _integration_ tests. Since these words are somewhat arbitrary, we'll define them too.\n" +
+    "\n" +
+    "First, let's talk about what your test suite might look at the moment. Suppose that you have an application with some external dependency. Maybe you're pulling data from someone's API. Maybe you're a consumer of some event source. Whatever it is, it's external and can change at any time and you need to be on top of it.\n" +
+    "\n" +
+    "You'll typically have two types of test that exercise this dependency. For now, let's call these _functional_ tests and _integration_ tests. Since these words are somewhat arbitrary, we'll define them too.\n"
   },
   {
     link: "/articles/a-sad-tale",

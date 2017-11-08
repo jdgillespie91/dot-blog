@@ -55,17 +55,14 @@ function About() {
 
 function Article({match}) {
   const a = articles.filter(x => x.link === "/articles/" + match.params.articleId)[0];
-  const style = {backgroundColor: a.backgroundColor};
 
+  const style = {backgroundColor: a.backgroundColor};
   return (
     <div className="body" style={style}>
       <div className="body-container" style={style}>
         <div className="article" style={style}>
-          <ul>
-            <li>Article: {match.params.articleId}</li>
-            <li>First paragraph...</li>
-            <li>Second paragraph...</li>
-          </ul>
+          <div className="article-title">{a.title}</div>
+          <div className="article-content">{a.content}</div>
         </div>
       </div>
     </div>
