@@ -43,21 +43,26 @@
 .body {
   background-color: var(--bg-color);
 
+  width: 100%;
+
   min-height: 100vh;
   margin-top: calc(-1 * var(--header-height));
   margin-bottom: calc(-1 * var(--footer-height));
+
+  display: flex;
+  justify-content: center;
 
   z-index: 1;
 }
 
 @media screen and (max-width: 420px) {
-  .body {
+  .body-container {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 420px) {
-  .body {
+  .body-container {
     width: 420px;
   }
 }
@@ -84,23 +89,19 @@
 }
 
 .card:nth-child(4n) {
-  background-color: #FFA69E;
-  color: #FFA69E;
+  color: var(--bg-color);
 }
 
 .card:nth-child(4n+1) {
-  background-color: #FAF3DD;
-  color: #FAF3DD;
+  color: var(--bg-color);
 }
 
 .card:nth-child(4n+2) {
-  background-color: #B8F2E6;
-  color: #B8F2E6;
+  color: var(--bg-color);
 }
 
 .card:nth-child(4n+3) {
-  background-color: #D1B3C4;
-  color: #D1B3C4;
+  color: var(--bg-color);
 }
 
 .footer {
