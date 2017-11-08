@@ -30,7 +30,12 @@ function Cards() {
 function Card(props) {
   const style = {backgroundColor: props.backgroundColor};
 
-  return <Link className="card" to={props.link} style={style}>{props.title}<br/>{props.summary}</Link>
+  return (
+    <Link className="card" to={props.link} style={style}>
+      <div className="card-title">{props.title}</div>
+      <div className="card-summary">{props.summary}</div>
+    </Link>
+  )
 }
 
 function About() {

@@ -80,9 +80,12 @@
 
 .card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  text-decoration: none;
 
   height: 260px;
   width: 100%;
@@ -102,6 +105,27 @@
 
 .card:nth-child(4n+3) {
   color: var(--bg-color);
+}
+
+.card-title {
+  width: 70%;
+  margin: 10px;
+
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #252323;
+}
+
+.card-summary {
+  width: 70%;
+  margin: 10px;
+
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-size: 16px;
+  font-style: italic;
+  color: #252323;
 }
 
 .footer {
