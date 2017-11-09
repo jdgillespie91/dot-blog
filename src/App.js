@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 import './App.css';
 import articles from './articles.js'
+import marked from 'marked'
 
 function Header() {
   return (
@@ -61,8 +62,7 @@ function Article({match}) {
     <div className="body" style={style}>
       <div className="body-container" style={style}>
         <div className="article" style={style}>
-          <div className="article-title">{a.title}</div>
-          <div className="article-content">{a.content}</div>
+          <div className='article-content' dangerouslySetInnerHTML={{__html: marked(a.content)}}></div>
         </div>
       </div>
     </div>
