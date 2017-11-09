@@ -20,7 +20,7 @@ function Cards() {
     <div className="body">
       <div className="body-container">
         {articles.map(a => {
-          return <Card link={a.link} title={a.title} summary={a.summary} backgroundColor={a.backgroundColor}/>
+          return <Card key={a.link} link={a.link} title={a.title} summary={a.summary} backgroundColor={a.backgroundColor}/>
         })}
       </div>
     </div>
