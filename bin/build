@@ -1,0 +1,5 @@
+#!/bin/sh
+
+react-scripts build
+echo $(git rev-parse HEAD) > build/VERSION
+
